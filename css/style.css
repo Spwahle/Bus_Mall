@@ -1,0 +1,74 @@
+body {
+  background-color: #FFFCF7
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section {
+  display:flex;
+  justify-content: center;
+  flex-flow: wrap row;
+  margin-bottom: 50px;
+}
+
+section > img {
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+  width: auto;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 10px 10px 5px #888888;
+  object-fit: scale-down;
+  margin: 15px;
+  border-radius: 20px;
+  transition: all .2s ease-in-out;
+}
+
+section > img:hover {
+  transform: scale(1.05);
+}
+
+canvas {
+  margin: 50px, 0, 0, 0 auto;
+  border-style: solid;
+  border-width: thin;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  margin: 15px;
+}
+
+p {
+  text-indent: 1.5em;
+}
+
+.instructions {
+  margin: 0 10% 0 10%;
+}
+
+.results {
+  display:flex;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+
+.bus  {
+  max-width: 100px;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+  object-fit: scale-down;
+  margin-right: 50px;
+}
+
+.bus:hover {
+    transform:translateX(-700%);
+    transition: all 1s;
+}
